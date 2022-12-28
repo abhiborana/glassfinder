@@ -36,17 +36,17 @@
 
     <nav class="navbar bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand"><img src="logo-removebg.png" alt="GlassFinder" class="logoImage"></a>
+            <a class="navbar-brand"><img src="./logo-removebg.png" alt="GlassFinder" class="logoImage"></a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" id="search" placeholder="Search Any Model"
                     aria-label="Search">
-                <button class="btn btn-outline-success mx-2" name="search_btn" type="submit">Search</button>
-                <button class="btn btn-outline-danger mx-2" name="reset" type="reset">Reset</button>
+                <button class="btn btn-sm btn-outline-success mx-2" name="search_btn" type="submit">Search</button>
+                <button class="btn btn-sm btn-outline-danger mx-2" name="reset" type="reset">Reset</button>
             </form>
         </div>
     </nav>
 
-    <!-- <form id="search-books">
+    <!-- <form id="search-models">
     <label for="search">Search:</label>
     <input type="text" name="search" id="search">
     <button name="search_btn">Search</button>
@@ -64,7 +64,7 @@
 
 </body>
 <script>
-    var books = [
+    var models = [
         ["oppo f11 pro", "vivo v15", "realme x", "vivo y30", "vivo y50", "poco m3 pro 5g", "relame 6", "realme 9 5g", "realme 8 5g"],
         ["poco x4 pro", "mi 11 t", "mi 11 t pro", "oneplus 10 r", "poco c3", "poco m2 pro", "iqoo z5", "mi 11 x", "realme gt neo 3"],
         ["oneplus 8 t", "oneplus 9 r", "oneplus 9"],
@@ -73,23 +73,24 @@
 
     ]
 
+
     var render = function (data) {
         var app = document.getElementById('app');
         var heading = '<h3 class="searchResultsHeading">Your Search Results</h1><br/>'
-        var booksHTMLString = '<div class="container d-flex gap-4">' +
-            data.map(function (book) {
+        var modelsHTMLString = '<div class="container d-flex justify-content-center align-items-center flex-wrap gap-4">' +
+            data.map(function (model) {
                 return `<div class="card border-primary mb-3" style="max-width: 15rem; min-height: 12rem; min-width: 12rem; max-height:15rem;">
                             <div class="card-header">Models</div>
                                 <div class="card-body text-success">
-                                <p class="card-text">${book.toString().toUpperCase()}</p>
+                                <p class="card-text">${model.toString().toUpperCase()}</p>
                             </div>
                         </div>`
             }).join('');
         + '</div>';
 
-        app.innerHTML = heading + booksHTMLString;
+        app.innerHTML = heading + modelsHTMLString;
     }
-    render(books);
+    // render(models);
 
     var handleSearch = function (event) {
         event.preventDefault();
@@ -105,16 +106,16 @@
         if (tokens.length) {
             //  Create a regular expression of all the search terms
             var searchTermRegex = new RegExp(tokens.join('|'), 'gim');
-            var filteredList = books.filter(function (book) {
+            var filteredList = models.filter(function (book) {
                 // Create a string of all object values
-                var bookString = '';
+                var modelstring = '';
                 for (var key in book) {
                     if (book.hasOwnProperty(key) && book[key] !== '') {
-                        bookString += book[key].toString().toLowerCase().trim() + ' ';
+                        modelstring += book[key].toString().toLowerCase().trim() + ' ';
                     }
                 }
                 // Return book objects where a match with the search regex if found
-                return bookString.match(searchTermRegex);
+                return modelstring.match(searchTermRegex);
             });
             // Render the search results
             render(filteredList);
@@ -124,7 +125,7 @@
     document.addEventListener('submit', handleSearch);
     document.addEventListener('reset', function (event) {
         event.preventDefault();
-        render(books);
+        app.innerHTML = ""
     })
 </script>
 
