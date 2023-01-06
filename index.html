@@ -99,8 +99,8 @@
                 <h2 class="gradient">Find Your Glass</h2>
                 <div class="mb-3">
                     <input type="text" class="form-control" id="queryText" placeholder="Search Any Model">
-                    <div id="exampleQuery" class="form-text">Example :- apple iphone 12</div>
-                </div>
+                    <div id="exampleQuery" class="form-text">Example :- iphone 12/mi 11/reno 3</div>
+                </div
                 <button type="submit" onclick="handleSubmit()" class="btn btn-primary">Search</button>
             </div>
 
@@ -390,13 +390,13 @@
             // }
 
             if (lists[i].toString().includes(query.toString().toLowerCase())) {
-                newList = newList.concat(lists[i].toString(), "\t")
+                newList = newList.concat(lists[i].toString(), "||||||")
             }
         }
         if (newList.length === 0) {
             return false;
         } else {
-            return newList.toUpperCase()
+            return newList.toUpperCase()+"||||||"
         }
     }
 
