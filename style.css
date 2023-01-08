@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient {
+  background: #2dbdce;
+  background: linear-gradient(to right, #225b61 0%, #2dbdce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientDark {
+  background: #2dbdce;
+  background: linear-gradient(to right, #225b61 0%, #2295a1 50%, #225b61 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #e1e1e1;
+  padding-top: 15px;
+}
+
+footer div ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.mainContent {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footerIcon {
+  width: 25px;
+  cursor: pointer;
+}
+
+#home {
+  min-height: 70vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
