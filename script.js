@@ -30,6 +30,9 @@ let lists = [
         "narzo 30 / 5g",
         "narzo 30 pro 5g",
     ],
+    ["samsung m10", "samsung a10"],
+    ["realme xt", "reno 7"],
+
     [
         "oppo f19",
         "oppo f19s",
@@ -63,11 +66,15 @@ let lists = [
         "realme v15",
         "find x5 lite",
     ],
+    ["mi 10 2022", "mi 10 power", "poco c40"],
+    ["mi note 10s", "mi note 10 4g", "mi note 11s", "mi note 11 4g", "poco m4 pro 4g"],
+    [],
     [
         "mi 9",
         "mi 9a",
         "mi 9c",
         "mi 10a",
+        "mi 10c",
         "poco c3",
         "realme c20",
         "realme c21",
@@ -78,6 +85,8 @@ let lists = [
         "samsung m23",
         "samsung f23",
     ],
+    ["mi 8", "mi 8a"],
+    ["mi note 5 pro", "mi note 6", "mi note 6+"],
     ["oppo f15", "oppo f17", "oppo a73 4g", "oppo a91", "reno 3"],
     [
         "mi 10 prime 2020",
@@ -90,6 +99,20 @@ let lists = [
     ],
     ["mi 7", "mi note 7", "mi note 7 pro", "mi note 7s", "mi y3"],
     ["mi note 8 pro", "oppo a9", "oppo f11", "vivo y19"],
+    ["samsung m30", "samsung m30s", "samsung a30", "samsung a50", "samsung a50s"],
+    ["realme c2", "oppo a1k", "realme c2s"],
+    ["realme x2", "realme xt", "oneplus 6t", "oneplus 7"],
+    ["realme x7 pro", "reno 7 pro", "mi 11 lite"],
+    ["oppo f9", "oppo f9 pro", "realme 2 pro", "realme 3 pro", "realme 5 pro"],
+    ["oneplus 8t", "oneplus 9", "oneplus 9r"],
+    ["vivo v17", "vivo v17 pro", "vivo v19"],
+    ["vivo v51", "vivo v51 pro"],
+    ["vivo y11", "vivo y12", "vivo y15", "vivo y17", "vivo v10"],
+    ["vivo y20", "vivo y20a", "vivo y20g", "vivo y20i", "vivo t2x", "oppo a16", "samsung a13", "samsung f23", "samsung m23", "samsung m33"],
+    ["vivo v11", "vivo v11 pro"],
+    ["vivo v20 pro", "vivo v23 5g"],
+    ["samsung a20", "samsung a30", "samsung a30s", "samsung a50", "samsung a50s", "samsung m10s", "samsung m21", "samsung m21s", "samsung m30", "samsung m31", "samsung f41"],
+    ["samsung a7 2018", "samsung j4 plus", "samsung j6 plus", "samsung j8 2018"],
     [
         "mi 11 lite",
         "reno 7 pro",
@@ -106,14 +129,18 @@ let lists = [
         "vivo y91i",
         "vivo y93",
         "vivo y93s",
+        "vivo y94",
         "vivo y95",
         "vivo y97",
+        "vivo z3i",
         "realme 3",
+        "realme 3i",
         "oppo a1k",
         "oppo a5s",
         "oppo a7",
         "oppo a12",
     ],
+    ["realme 2 pro", "realme u1"],
     [
         "realme 6 pro",
         "realme 7i",
@@ -136,6 +163,7 @@ let lists = [
         "oppo a96 4g",
     ],
     ["vivo v20 pro", "vivo v23 5g"],
+    ["vivo v11", "vivo x23"],
     [
         "vivo v9",
         "vivo x21",
@@ -146,6 +174,7 @@ let lists = [
         "vivo y85",
         "vivo y89",
         "realme 2",
+        "oppo a3s"
     ],
     [
         "realme gt / 5g",
@@ -156,6 +185,8 @@ let lists = [
         "oneplus nord ce 5g",
     ],
     [
+        "oppo a5 2020",
+        "oppo a9 2020",
         "vivo y51 2020",
         "vivo y51a",
         "vivo y53 5g",
@@ -225,6 +256,12 @@ let lists = [
     ["iphone xs max", "iphone 11 pro max"],
     ["iphone 12", "iphone 12 pro"],
     ["iphone 13", "iphone 13 pro", "iphone 14"],
+    ["vivo v10", "vivo y11", "vivo y12", "vivo y15", "vivo y17", "vivo u10"],
+    ["oppo a5", "realme c1"],
+    ["vivo v9", "vivo y81", "vivo y81i", "vivo y83", "vivo y83 pro", "vivo y85", "vivo y89", "oppo a5", "oppo a3s"],
+    ["oppo a77", "oppo a77s", "oppo a57", "oppo a53s", "oppo a31", "oppo a16k", "vivo y51", "vivo y51a", "vivo y31", "vivo y12s", "vivo y75", "vivo y33", "vivo y33t", "vivo y35", "vivo y16", "vivo y22", "vivo y33", "poco m2", "poco m3", "poco c3", "mi 10a", "mi 11e", "samsung a12", "samsung a04s", "nokia g21 ds"],
+    ["samsung m20", "realme 3 pro", "realme 5 pro", "oppo f9", "oppo f9 pro"],
+    ["poco m3", "mi note 9 4g", "mi 9 power", "mi 9t", "oppo a9", "oppo a9x", "oppo f11", "vivo v3", "vivo y19", "vivo u20", "vivo y5s"]
 ];
 
 // ONLY TRIAL CODE HERE
