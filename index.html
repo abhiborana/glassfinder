@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+
+    <!-- EMAIL JS SCRIPT TAG -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -33,6 +36,9 @@
                         <li class="nav-item mx-2">
                             <a class="navbar-brand" href="#about">About Us</a>
                         </li>
+                        <li class="nav-item mx-2">
+                            <a class="navbar-brand" href="#contribute">Contribute Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -45,7 +51,8 @@
             <div class="container w-75 my-2 border border-secondary rounded p-4">
                 <h2 class="gradient">Find Your Glass</h2>
                 <div class="mb-3">
-                    <input type="text" onkeyup="handleSubmit()" class="form-control" id="queryText" placeholder="Search Any Model" />
+                    <input type="text" one class="form-control" onkeyup="handleSubmit()" id="queryText"
+                        placeholder="Search Any Model" />
                     <div id="exampleQuery" class="form-text">
                         Example :- iPhone 12/ mi 11/ Reno 6
                     </div>
@@ -102,6 +109,29 @@
             </p>
         </div>
     </div>
+    <hr>
+
+    <!-- ---------------------CONTRIBUTE PAGE--------------------------- -->
+    <div class="container contribute" id="contribute">
+        <h1 class="gradient text-center mb-4">Contribute Us</h1>
+        <p class="gradient text-muted">
+            You Can Easily contribute to our website to enhance search results for a better match.
+            You simply have to fill up the form below and click submit.
+        </p>
+        <div id="contributeForm">
+            <div class="mb-3 container">
+                <input type="text" one class="form-control" autocomplete="off" id="nameContribute"
+                    placeholder="Enter Your Name" />
+                <input type="text" one class="form-control" autocomplete="off" id="modelOne"
+                    placeholder="Enter A Model" />
+                <input type="text" one class="form-control" id="modelTwo" placeholder="Enter Matching Model" />
+                <button class="btn btn-success mt-2" id="submitContribute">Submit Suggestion</button>
+            </div>
+        </div>
+
+    </div>
+
+
 
     <!-- ----------------------FOOTER SECTION--------------------------- -->
     <footer class="d-flex align-items-center justify-content-center">
