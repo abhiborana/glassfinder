@@ -352,3 +352,28 @@ const handleSubmit = () => {
         }, 4000);
     }
 };
+
+const submitContribute = document.getElementById("submitContribute")
+let nameContribute = document.getElementById("nameContribute").value
+let modelOne = document.getElementById("modelOne").value
+let modelTwo = document.getElementById("modelTwo").value
+
+submitContribute.addEventListener("click", () => {
+    if (nameContribute.length > 3 && modelOne.length > 3 && modelTwo.length > 3) {
+        emailjs.init('cbYMa5Nu3u0x9LiH_');
+        emailjs.send("service_2khse2g", "template_6b7behw", {
+            from_name: "abhiborana.a@gmail.com",
+            message: `Sender Name: ${nameContribute},Model One: ${document.getElementById("modelOne").value},Matches With: ${document.getElementById("modelTwo").value}`,
+            reply_to: "abhiborana.a@gmail.com",
+        }).then(() => {
+            alert("Sent Successfully")
+            nameContribute = ""
+            modelOne = ""
+            modelTwo = ""
+        }).catch((err) => {
+            alert("Some Error Occurred")
+        });
+    } else {
+        alert("Please Provide Proper Information")
+    }
+})
