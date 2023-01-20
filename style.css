@@ -49,3 +49,17 @@ nav {
   top: 0;
   width: 100%;
 }
+
+#contribute{
+  min-height: 500px;
+}
+
+#contributeForm div {
+  display: grid;
+  place-items: center;
+    
+}
+#contributeForm input{
+  width: 230px;
+  margin: 5px 0 5px 0;
+}
