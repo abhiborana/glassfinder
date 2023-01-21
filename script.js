@@ -354,11 +354,12 @@ const handleSubmit = () => {
 };
 
 const submitContribute = document.getElementById("submitContribute")
-let nameContribute = document.getElementById("nameContribute").value
-let modelOne = document.getElementById("modelOne").value
-let modelTwo = document.getElementById("modelTwo").value
+
 
 submitContribute.addEventListener("click", () => {
+    let nameContribute = document.getElementById("nameContribute").value
+    let modelOne = document.getElementById("modelOne").value
+    let modelTwo = document.getElementById("modelTwo").value
     if (nameContribute.length > 3 && modelOne.length > 3 && modelTwo.length > 3) {
         emailjs.init('cbYMa5Nu3u0x9LiH_');
         emailjs.send("service_2khse2g", "template_6b7behw", {
