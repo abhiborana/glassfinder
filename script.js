@@ -376,6 +376,7 @@ submitContribute.addEventListener("click", () => {
             reply_to: "abhiborana.a@gmail.com",
         }).then(() => {
             alert("Sent Successfully")
+            location.reload()
             nameContribute = ""
             modelOne = ""
             modelTwo = ""
