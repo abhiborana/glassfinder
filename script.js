@@ -1,4 +1,7 @@
 let lists = [
+    // NEW UPDATES
+    ["reno 8 pro", "oneplus 10r"],
+    //OLD LIST
     [
         "oppo f11 pro",
         "oppo a54 5g",
@@ -353,18 +356,23 @@ const handleSubmit = () => {
     }
 };
 
-const submitContribute = document.getElementById("submitContribute")
-
+const submitContribute = document.getElementById("submitContribute");
 
 submitContribute.addEventListener("click", () => {
-    let nameContribute = document.getElementById("nameContribute").value
-    let modelOne = document.getElementById("modelOne").value
-    let modelTwo = document.getElementById("modelTwo").value
+    let nameContribute = document.getElementById("nameContribute").value;
+    let modelOne = document.getElementById("modelOne").value;
+    let modelTwo = document.getElementById("modelTwo").value;
+
+    if (nameContribute === "gandu" || nameContribute == "bsdk") {
+        alert("Plaese Enter Correct Name")
+        return;
+    }
+
     if (nameContribute.length > 3 && modelOne.length > 3 && modelTwo.length > 3) {
         emailjs.init('cbYMa5Nu3u0x9LiH_');
         emailjs.send("service_2khse2g", "template_6b7behw", {
             from_name: "abhiborana.a@gmail.com",
-            message: `Sender Name: ${nameContribute},Model One: ${document.getElementById("modelOne").value},Matches With: ${document.getElementById("modelTwo").value}`,
+            message: `Sender Name: ${nameContribute},Model One: ${modelOne},Matches With: ${modelTwo}`,
             reply_to: "abhiborana.a@gmail.com",
         }).then(() => {
             alert("Sent Successfully")
