@@ -319,7 +319,7 @@ let lists = [
 
     ["mi 7", "mi 7 pro", "mi y3"],
 
-    ["vivo x60", "vivo x70", "iqoo 8 5g", "iqoo 9 5g"],
+    ["vivo x60","Vivo x50", "vivo x70", "iqoo 8 5g", "iqoo 9 5g"],
 
     ["oneplus 7", "oneplus 6t", "vivo v11", "vivo v11 pro", "vivo x21s", "mi 9", "mi 9 lite", "mi 9 pro", "realme xt"]
     ,
